@@ -14,11 +14,12 @@
    --card:#252226;
    --white:#ffffff;
    --green:#00222E;
-   --radial: radial-gradient(50% 50% at 50% 50%, #00BFFF 0%, #728AE6 100%);
+   --radial: radial-gradient(180deg, #00BFFF 0%, #728AE6 100%);
    ;
 }
 
 body{
+    width: 100%;
     font-family: 'HK Grotesk', sans-serif;
     font-style: normal;
     background-color:var(--bgdark);
@@ -32,23 +33,20 @@ body{
 
 /* left-panel styling starts here */
 .left-panel{
-    width: 20%;
+    width: 15%;
     padding-top:48px;
     margin-top: -900px;
     position: sticky;
     top: 0;
 }
 .logo{
-    width: 184px;
-    height: 24px; 
-    /* margin: 48px 49px 80px; */
-    margin-bottom: 80px;
-    margin-left: 49px;
+     margin-bottom: 80px;
+    
 }
 .navs{
 gap:20px;
 justify-content: left;
-margin-left: 74px;
+margin-left: 34px;
 margin-bottom: 40px;
 cursor: pointer;
 }
@@ -90,7 +88,7 @@ input::placeholder{
 color: var(--font);
 }
 .display-bg{
-    background-color:var(--blue);
+    background: linear-gradient(180deg, #00BFFF 0%, #728AE6 100%);
     margin: 64px 10px 40px 8px ;
     padding-left: 40px;
 }
@@ -182,6 +180,98 @@ justify-items: center;
 
 /* right-panel styling starts here */
 .right-panel{
-    width: 20%;
+    width: 25%;
+    margin-top: -100px;
+    padding-top: 48px;
+
+}
+
+.log-sign{
+gap: 24px;
+margin-bottom: 56px;
+}
+.log-in{
+color:var(--blue);
+border: 2px solid;
+width: 102px;
+height: 40px;
+border-radius: 8px;
+background:transparent;
+font-weight: 700;
+font-size: 16px;
+cursor: pointer;
+}
+.register{
+    width: 102px;
+    height: 40px;
+    background: linear-gradient(180deg, #00BFFF 0%, #728AE6 100%);
+    border-radius: 8px;
+    color:var(--white);
+    border:none;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.recents{
+gap: 80px;
+margin-bottom: 24px;
+
+}
+.recently-played{
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--font);
+}
+.see-all{
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.playings{
+    width: 290px;
+    height: 448px;
+    background:var(--card);
+    border-radius: 8px;
+    margin: auto;
+    gap: 24px;
+    padding: 30px;
+    margin-bottom: 32px;
+}
+.innerflex{
+    gap: 24px;
+    margin-bottom: 32px;
+}
+.song-cover{
+   width: 48px;
+    height: 48px;
+    background:var(--blue);
+    border-radius: 8px;
+}
+
+.playings-deets h5{
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--font);
+}
+.playings-deets p{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--font);
+}
+.song-display{
+    width: 290px;
+    height: 232px;
+    background:var(--white);
+    border-radius: 8px;
+    margin: auto;
+}
+.song-display-deets{
+
+}
+.song-dis{
+    
 }
 /* right-panel styling ends here */
