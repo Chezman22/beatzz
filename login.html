@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundMack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+      <div class="wrapper">
+         <div class="log-sign generalflex">
+            <button class="log-in"> Log in</button>
+            <button class="register"> Register</button>
+        </div>
+         
+            <div class="form-inner">
+               <form action="#" class="login">
+                  <div class="field generalflex">
+                     <input type="text" placeholder="NG +234 |Phone Number" required>
+                  </div>
+                  <div class="field generalflex">
+                     <input type="password" placeholder="Password(6-16 characters)" required>
+                  </div>
+                  <div class="pass-link generalflex">
+                     <a href="#">Forgot password?</a>
+                  </div>
+                  <div class="field btn generalflex">
+                     <div class="btn-layer">
+                     <input type="submit" value="Login">
+
+                     <p class="social-text">Or</p>
+                     <div class="social-media">
+                      <a href="#" class="social-icon">
+                         <img src="./icon-img-pack/logos_facebook.svg">
+                      </a>
+                      <a href="#" class="social-icon">
+                         <img src="./icon-img-pack/logos_twitter.svg">
+                      </a>
+                      <a href="#" class="social-icon">
+                         <img src="./icon-img-pack/flat-color-icons_google.svg">
+                      </a>
+                      </div>
+                  
+                     <hr>
+
+                     <div class="wrapper">
+                        <div class="log-sign generalflex">
+                           <button class="log-in"> Log in</button>
+                           <button class="register"> Register</button>
+                       </div>
+                     <div class="form-inner">
+                        <form action="#" class="login">
+                           <div class="field generalflex">
+                              <input type="text" placeholder="NG +234 |Phone Number" required>
+                           </div>
+                           <div class="field generalflex">
+                              <input type="text" placeholder="Verification Code" required>
+                           </div>
+                           <div class="field generalflex">
+                            <input type="text" placeholder="Get Code" required>
+                         </div>
+                         <div class="field generalflex">
+                            <input type="text" placeholder="Username" required>
+                         </div>
+                         <div class="field generalflex">
+                            <input type="password" placeholder="Password(6-16 characters)" required>
+                         </div>
+                         <div class="field generalflex">
+                            <input type="password" placeholder="Confirm Password" required>
+                         </div>
+                         <div class="field">
+                           <input type="radio" name="Gender"> Male
+                           <input type="radio" name="Gender"> Female
+                         </div>
+                        </div>
+                         <div class="btn-layer">
+                          <input type="button" value="register">
+                          <div class="field-terms">
+                           <label class="check">
+                              <input type="checkboox">
+                              <span class="checkmark"></span>
+                              </label>
+                              <p>I agree with the terms and conditions</p>
+                              </div>
+                          <p class="social-text">Or</p>
+                          <div class="social-media">
+                           <a href="#" class="social-icon">
+                              <img src="./icon-img-pack/logos_facebook.svg">
+                           </a>
+                           <a href="#" class="social-icon">
+                              <img src="./icon-img-pack/logos_twitter.svg">
+                           </a>
+                           <a href="#" class="social-icon">
+                              <img src="./icon-img-pack/flat-color-icons_google.svg">
+                           </a>
+                          </div>
+                         </div>
+                         </div>
+                       </form>
+                 </div>
+                 </div>
+            </div>
+      </div>
+
+    
+      <script>
+         const loginText = document.querySelector(".title-text .login");
+         const loginForm = document.querySelector("form.login");
+         const loginBtn = document.querySelector("label.login");
+         const signupBtn = document.querySelector("label.signup");
+         const signupLink = document.querySelector("form .signup-link a");
+         signupBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "-50%";
+           loginText.style.marginLeft = "-50%";
+         });
+         loginBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "0%";
+           loginText.style.marginLeft = "0%";
+         });
+         signupLink.onclick = (()=>{
+           signupBtn.click();
+           return false;
+         });
+      </script>
+   </body>
+</html>
