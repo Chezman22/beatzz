@@ -41,7 +41,10 @@ body{
 }
 .logo{
      margin-bottom: 80px;
+    }
     
+.logo img{
+
 }
 .navs{
 gap:20px;
@@ -149,7 +152,7 @@ color: var(--font);
 .coverimg{
 width: 48px;
 height: 48px;
-background: #C4C4C4;
+/* background: #C4C4C4; */
 border-radius: 8px;
 margin-right: 24px;
 }
@@ -158,6 +161,7 @@ margin-right: 24px;
     margin-right: 130px;
     justify-content: left;
     justify-items: left;
+    cursor: pointer;
 
 
 }
@@ -167,10 +171,13 @@ gap: 14px;
 align-items: center;
 justify-content: center;
 justify-items: center;
+
 }
 .song-deets{
     color: var(--font);
     gap: 80px;
+    cursor: pointer;
+
 }
 
 
@@ -181,8 +188,10 @@ justify-items: center;
 /* right-panel styling starts here */
 .right-panel{
     width: 25%;
-    margin-top: -100px;
+    margin-top: -420px;
     padding-top: 48px;
+    position: sticky;
+    top: 0;
 
 }
 
@@ -247,32 +256,55 @@ margin-bottom: 24px;
 .song-cover{
    width: 48px;
     height: 48px;
-    background:var(--blue);
+    /* background:var(--blue); */
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .playings-deets h5{
     font-weight: 700;
     font-size: 20px;
     color: var(--font);
+    cursor: pointer;
+
 }
 .playings-deets p{
     font-weight: 400;
     font-size: 16px;
     color: var(--font);
+    cursor: pointer;
+
 }
 .song-display{
-    width: 290px;
-    height: 232px;
-    background:var(--white);
+    max-width: 290px;
+    max-height: 232px;
     border-radius: 8px;
     margin: auto;
 }
-.song-display-deets{
+.song-display img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 
 }
-.song-dis{
-    
+.song-display-deets{
+justify-content: space-around;
+
+}
+.song-display-deets img{
+    cursor: pointer;
+}
+.song-dis h3{
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--font); 
+    cursor: pointer;
+}
+.song-dis p{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--font); 
+    cursor: pointer;
 }
 /* right-panel styling ends here */
 
@@ -306,7 +338,7 @@ margin-bottom: 24px;
 }
 .field-terms{
     display: flex;
-    margin-top: 16px;
+     margin-top: 16px;
     margin-left: 40px;
     gap: 10px;
     font-weight: 400;
