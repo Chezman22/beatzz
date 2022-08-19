@@ -276,34 +276,115 @@ margin-bottom: 24px;
 }
 /* right-panel styling ends here */
 
+.wrapper{
+    width: 452px;
+    height: 664px;
+    background-color: var(--card);
+    margin: 30px auto;
+    padding-top: 20px;
+    padding-bottom: 150px;
+
+}
+.focus{
+    display: flex;
+    gap: 32px;
+    margin: 40px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.focus p{
+    font-size: 24px;
+    color:var(--blue); 
+    font-weight: 600;
+
+}
+.focus h3{
+    font-size: 24px;
+    color:var(--grey); 
+    font-weight: 600;
+}
+.field-terms{
+    display: flex;
+    margin-top: 16px;
+    margin-left: 40px;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--white);
+}
+.field-terms a{
+    text-decoration: none;
+    color: var(--blue);
+}
+input::placeholder{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--grey);
+
+}
+.gender{
+display: flex !important;
+justify-content: space-around;
+color: var(--font);
+}
+.focus-in{
+    width: 372px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 2px solid var(--grey);
+    padding: 25px;
+}
+.verify{
+    width:254px ;
+    margin-right: 8px;
+    
+}
+
+.butty{
+    background-color: transparent;
+    padding: 15px 15px;
+    border-radius: 8px;
+    border: 2px solid var(--blue);
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 16px;
+}
 .field{
     margin: 20px;
-    padding: -100px;
     justify-content: center;
     border-radius: 8px;
 }
 .btn-layer{
-color:#728AE6   
+color:var(--white) ;  
 border: 12px;
-padding: 20px; ;
+width: 372px;
+height: 56px;
+margin-left: 20px ;
+border-radius: 8px;
+background: linear-gradient(180deg, #00BFFF 0%, #728AE6 100%);
 }
 .social-media{
     display: flex;
     justify-content: center;
+
+}
+.social-text{
+    color: var(--font);
+    font-size: 16px;
+    font-weight: 400px;
+    text-align: center;
+    margin-top: 16px auto;
 }
 .social-icon{
     height: 46px;
     width: 46px;
-    border: 1px solid #333;
     margin: 0 0.45rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
-    color: #333;
-    font-size: 1.3;
 }
 .social-icon:hover{
-    color: #728AE6;
-    border-color: #110D14;
+    color: var(--blue);
 }

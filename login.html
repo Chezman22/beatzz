@@ -10,12 +10,7 @@
 
 <body>
     
-      <div class="wrapper">
-         <div class="log-sign generalflex">
-            <button class="log-in"> Log in</button>
-            <button class="register"> Register</button>
-        </div>
-         
+      <!-- <div class="wrapper"> 
             <div class="form-inner">
                <form action="#" class="login">
                   <div class="field generalflex">
@@ -45,61 +40,68 @@
                       </div>
                   
                      <hr>
+                     out -->
+                    <div class="wrapper">
+                           <div class="focus">
+                              <h3>Log in</h3>
+                              <p>Register</p>
+                           </div>
+                           
+                           <div class="form-inner">
 
-                     <div class="wrapper">
-                        <div class="log-sign generalflex">
-                           <button class="log-in"> Log in</button>
-                           <button class="register"> Register</button>
-                       </div>
-                     <div class="form-inner">
                         <form action="#" class="login">
-                           <div class="field generalflex">
-                              <input type="text" placeholder="NG +234 |Phone Number" required>
+                               <div class="field">
+                                  <input class="focus-in" type="number" placeholder="NG +234 |Phone Number" required>
+                               </div>
+                                       
+                                 <div class="field">
+                                    <input class="focus-in verify"  type="number" placeholder="Verification Code" required>
+                                    <button class="butty">Get Code</button>
+                                 </div>
+                             
+                                 <div class="field">
+                                       <input class="focus-in"  type="text" placeholder="Username" required>
+                                 </div>
+
+                                 <div class="field">
+                                       <input class="focus-in"  type="password" placeholder="Password(6-16 characters)" required>
+                                 </div>     
+                                                       
+                                 <div class="field">
+                                    <input class="focus-in" type="password" placeholder="Confirm Password" required>
+                                 </div>
+
+                                 <div class="field gender">
+                                       <input type="radio" name="Gender"> Male</input>
+                                       <input type="radio" name="Gender"> Female</input>
+                                 </div>
+                                 
+                                 
+                                 <button class="btn-layer">Register</button>
+
+                                 <div class="field-terms">
+                                       <label class="check">
+                                          <input type="checkbox">
+                                          </label>
+                                          <p>I agree with the <a href="#"> terms and conditions</a> </p>
+                                 </div>
+                                 
+                                 <p class="social-text">- Or -</p>
+                                 
+                                 <div class="social-media">
+                                       <a href="#" class="social-icon">
+                                          <img src="./icon-img-pack/logos_facebook.svg">
+                                       </a>
+                                       <a href="#" class="social-icon">
+                                          <img src="./icon-img-pack/logos_twitter.svg">
+                                       </a>
+                                       <a href="#" class="social-icon">
+                                          <img src="./icon-img-pack/flat-color-icons_google.svg">
+                                       </a>
+                                 </div>
+                             </div>
                            </div>
-                           <div class="field generalflex">
-                              <input type="text" placeholder="Verification Code" required>
-                           </div>
-                           <div class="field generalflex">
-                            <input type="text" placeholder="Get Code" required>
-                         </div>
-                         <div class="field generalflex">
-                            <input type="text" placeholder="Username" required>
-                         </div>
-                         <div class="field generalflex">
-                            <input type="password" placeholder="Password(6-16 characters)" required>
-                         </div>
-                         <div class="field generalflex">
-                            <input type="password" placeholder="Confirm Password" required>
-                         </div>
-                         <div class="field">
-                           <input type="radio" name="Gender"> Male
-                           <input type="radio" name="Gender"> Female
-                         </div>
-                        </div>
-                         <div class="btn-layer">
-                          <input type="button" value="register">
-                          <div class="field-terms">
-                           <label class="check">
-                              <input type="checkboox">
-                              <span class="checkmark"></span>
-                              </label>
-                              <p>I agree with the terms and conditions</p>
-                              </div>
-                          <p class="social-text">Or</p>
-                          <div class="social-media">
-                           <a href="#" class="social-icon">
-                              <img src="./icon-img-pack/logos_facebook.svg">
-                           </a>
-                           <a href="#" class="social-icon">
-                              <img src="./icon-img-pack/logos_twitter.svg">
-                           </a>
-                           <a href="#" class="social-icon">
-                              <img src="./icon-img-pack/flat-color-icons_google.svg">
-                           </a>
-                          </div>
-                         </div>
-                         </div>
-                       </form>
+                        </form>
                  </div>
                  </div>
             </div>
