@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SoundMack</title>
+   <link rel="stylesheet" href="style.css"
+</head>
+<body> 
+    <div class="wrapper">
+         <div class="focus">
+             <h3>Log in</h3>
+             <p>Register</p>
+         </div>
+                           
+            <div class="form-inner">
+
+              <form action="#" class="login">
+                <div class="field">
+                   <input class="focus-in" type="number" placeholder="NG +234 |Phone Number" required>
+                </div>
+                                       
+                <div class="field">
+                   <input class="focus-in verify"  type="number" placeholder="Verification Code" required>
+                      <button class="butty">Get Code</button>
+                </div>
+                             
+                <div class="field">
+                    <input class="focus-in"  type="text" placeholder="Username" required>
+                </div>
+
+                <div class="field">
+                    <input class="focus-in"  type="password" placeholder="Password(6-16 characters)" required>
+                </div>     
+                                                       
+                <div class="field">
+                   <input class="focus-in" type="password" placeholder="Confirm Password" required>
+                </div>
+
+                <div class="field gender">
+                   <input type="radio" name="Gender"> Male</input>
+                   <input type="radio" name="Gender"> Female</input>
+                </div>
+                                 
+                                 
+                  <button class="btn-layer">Register</button>
+
+                <div class="field-terms">
+                   <label class="check">
+                   <input type="checkbox">
+                   </label>
+                   <p>I agree with the <a href="#"> terms and conditions</a> </p>
+                </div>
+                                 
+                   <p class="social-text">- Or -</p>
+                                 
+                <div class="social-media">
+                   <a href="#" class="social-icon">
+                    <img src="./icon-img-pack/logos_facebook.svg">
+                   </a>
+                  <a href="#" class="social-icon">
+                    <img src="./icon-img-pack/logos_twitter.svg">
+                  </a>
+                  <a href="#" class="social-icon">
+                    <img src="./icon-img-pack/flat-color-icons_google.svg">
+                 </a>
+
+             </div>
+        </div>
+    </div>
+
+    
+      <script>
+         const loginText = document.querySelector(".title-text .login");
+         const loginForm = document.querySelector("form.login");
+         const loginBtn = document.querySelector("label.login");
+         const signupBtn = document.querySelector("label.signup");
+         const signupLink = document.querySelector("form .signup-link a");
+         signupBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "-50%";
+           loginText.style.marginLeft = "-50%";
+         });
+         loginBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "0%";
+           loginText.style.marginLeft = "0%";
+         });
+         signupLink.onclick = (()=>{
+           signupBtn.click();
+           return false;
+         });
+      </script>
+   </body>
+</html>

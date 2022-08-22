@@ -376,8 +376,18 @@ justify-content: space-around;
     font-size: 24px;
     color:var(--blue); 
     font-weight: 600;
-
 }
+.pass-link{
+    margin: 30px 50px;
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+}
+.pass-link a{
+    text-decoration: none;
+    color: var(--blue);
+}
+
 .focus h3{
     font-size: 24px;
     color:var(--grey); 
@@ -456,6 +466,14 @@ background: linear-gradient(180deg, #00BFFF 0%, #728AE6 100%);
     text-align: center;
     margin-top: 16px auto;
 }
+.social-textin{
+    color: var(--font);
+    font-size: 16px;
+    font-weight: 400px;
+    text-align: center;
+    margin-top: 200px;
+
+}
 .social-icon{
     height: 46px;
     width: 46px;
@@ -464,6 +482,17 @@ background: linear-gradient(180deg, #00BFFF 0%, #728AE6 100%);
     justify-content: center;
     align-items: center;
 }
+.social-icon-down{
+    margin-top: 20px;
+    justify-content: space-around;
+    height: 46px;
+    width: 46px;
+    margin: 0 0.45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .social-icon:hover{
     color: var(--blue);
 }
