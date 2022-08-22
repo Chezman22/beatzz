@@ -1,4 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css");
+@import url(//db.onlinewebfonts.com/c/d4427ac94162625b40744124d565291b?family=Xenophone);
+
 *{
     margin: 0;
     padding: 0;
@@ -31,21 +33,99 @@ body{
     align-items: center;
 }
 
+.navbar{
+    width: 100%;
+    justify-content: space-between;
+    padding: 40px;
+    border-bottom: 2px solid var(--grey);    
+    }
+    
+    .logo{
+    /* margin-left: -100px; */
+    display: flex;
+    gap: 10px;
+    position: relative;
+    left:-30px;
+    }
+       
+    .logo img{
+    width: 40px;
+    height: 40px;
+    }
+    
+    .logo p{
+    font-weight: 400;
+    font-size: 28px;
+    color: var(--white);
+    }
+    .search-bar{
+        gap: 20px;
+        padding: 8px 320px 8px 90px;
+        width: 476px;
+        background-color:var(--card);
+        border-radius: 8px;
+        position: relative;
+        left: -180px;
+        
+        /* margin-top: 48px; */
+        
+        }
+        .search-bar img{
+            margin-left: 130px;
+            cursor: pointer;
+        }
+        .song-search{
+            border: none;
+        }
+        input[type=search]{
+            background-color: transparent;
+            padding: 5px 100px 5px 0;
+        }
+        input::placeholder{
+            color: var(--font);
+        
+        }
+    .log-sign{
+    gap: 24px;
+    /* margin-bottom: 56px; */
+    }
+    
+    .log-in{
+    color:var(--blue);
+    border: 2px solid;
+    width: 102px;
+    height: 40px;
+    border-radius: 8px;
+    background:transparent;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    }
+    
+    .register{
+    width: 102px;
+    height: 40px;
+    background: linear-gradient(180deg, #00BFFF 0%, #728AE6 100%);
+    border-radius: 8px;
+    color:var(--white);
+    border:none;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    }
+    .coverall{
+        width: 100%;
+    }
 /* left-panel styling starts here */
 .left-panel{
     width: 15%;
     padding-top:48px;
-    margin-top: -900px;
+    margin-top: -1100px;
     position: sticky;
     top: 0;
 }
-.logo{
-     margin-bottom: 80px;
-    }
-    
-.logo img{
 
-}
+    
 .navs{
 gap:20px;
 justify-content: left;
@@ -54,10 +134,12 @@ margin-bottom: 40px;
 cursor: pointer;
 }
 
-.navs p{
-color:var(--grey)
-
-}
+.navs a{
+    text-decoration: none;
+    color:var(--grey);
+    font-weight: 600;
+    font-size: 20px;
+    }
 
 /* left-panel styling ends here */
 
@@ -65,35 +147,18 @@ color:var(--grey)
 /* main-panel styling starts here */
 .main-panel{
     width: 60%;
-    padding-top: 48px;
+    /* padding-top: 8px; */
     border-left: 2px solid var(--grey);
     border-right: 2px solid var(--grey);
-    padding-left: 30px;
-    padding-right: 10px;
+    /* padding-left: 30px; */
+    /* padding-right: 10px; */
 }
-.search-bar{
-gap: 20px;
-padding: 8px 320px 8px 90px;
-width: 476px;
-background-color:var(--card);
-margin-left: 10px;
-border-radius: 8px;
-/* margin-top: 48px; */
 
-}
-.song-search{
-    border: none;
-}
-input[type=search]{
-    background-color: transparent;
-}
-input::placeholder{
-color: var(--font);
-}
 .display-bg{
     background: linear-gradient(180deg, #00BFFF 0%, #728AE6 100%);
-    margin: 64px 10px 40px 8px ;
+    margin: 24px 15px 40px 32px ;
     padding-left: 40px;
+    border-radius: 8px;
 }
 .display-bg-text{
     color: var(--white);
@@ -136,14 +201,16 @@ color: var(--font);
     font-size: 32px;
     line-height: 40px;
     color: var(--font);
+    margin-left: 35px;
+    margin-bottom: 32px;
 }
 .songs{
     /* justify-content: space-between; */
     color: var(--font);
     background-color: var(--card);
-    padding: 8px 48px;
+    padding: 8px 28px;
     width: 100%;
-    margin: 10px;
+    margin-bottom: 24px;
 }
 .sn{
     margin-right: 32px;
@@ -177,9 +244,14 @@ justify-items: center;
     color: var(--font);
     gap: 80px;
     cursor: pointer;
-
 }
 
+.play-board{
+    width: 100%;
+    height:120px ;
+    background:var(--dark);
+    
+}
 
 
 /* main-panel styling ends here */
@@ -188,39 +260,14 @@ justify-items: center;
 /* right-panel styling starts here */
 .right-panel{
     width: 25%;
-    margin-top: -420px;
+    margin-top: -650px;
     padding-top: 48px;
     position: sticky;
     top: 0;
 
 }
 
-.log-sign{
-gap: 24px;
-margin-bottom: 56px;
-}
-.log-in{
-color:var(--blue);
-border: 2px solid;
-width: 102px;
-height: 40px;
-border-radius: 8px;
-background:transparent;
-font-weight: 700;
-font-size: 16px;
-cursor: pointer;
-}
-.register{
-    width: 102px;
-    height: 40px;
-    background: linear-gradient(180deg, #00BFFF 0%, #728AE6 100%);
-    border-radius: 8px;
-    color:var(--white);
-    border:none;
-    font-weight: 700;
-    font-size: 16px;
-    cursor: pointer;
-}
+
 
 .recents{
 gap: 80px;

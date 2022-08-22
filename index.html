@@ -5,43 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoundMack</title>
+    <link href="//db.onlinewebfonts.com/c/d4427ac94162625b40744124d565291b?family=Xenophone" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./art-pack/music-icon.png">
 </head>
-<body class="generalflex">
-
-    <section class="left-panel">
-        <div class="logo">
-            <img src="./icon-img-pack/Frame 27.png" alt="">
+<body>
+    <section class="navbar generalflex">
+        <div class="logo">                                     
+            <img src="./art-pack/music-icon.png" alt="">
+            <p>Soundmack</p>
         </div>
+        <div class="search-bar generalflex">
+            <img src="./icon-img-pack/search-normal.svg" alt="">
+            <input type="search" placeholder="Search here" class="song-search">
+        </div>
+        <div class="log-sign generalflex">
+            <button class="log-in"> Log in</button>
+            <button class="register"> Register</button>
+        </div>
+    </section>
+<div class="coverall generalflex" >
+    <section class="left-panel">
+        
         <div class="nav">
             <div class="home generalflex navs">
                 <img src="./icon-img-pack/Vector (2).svg" alt="">
-                <p>Home</p>
+               <a href="index.html">Home</a>
             </div>
             <div class="discover generalflex navs">
                 <img src="./icon-img-pack/Vector.svg" alt="">
-                <p>Discover</p>
+                <a href="discover.html">Discover</a>
             </div>
             <div class="downloads generalflex navs">
                 <img src="./icon-img-pack/donwload.png" alt="">
-                <p>Downloads</p>
+                <a href="downloads.html">Downloads</a>
             </div>
             <div class="fav generalflex navs">
                 <img src="./icon-img-pack/favourite.png" alt="">
-                <p>Favourites</p>
+                <a href="favourites.html">Favourites</a>
             </div>
             <div class="settings generalflex navs">
                 <img src="./icon-img-pack/setting.png" alt="">
-                <p>Settings</p>
+                <a href="settings.html">Settings</a>
             </div>
         </div>
     </section>
     <section class="main-panel">
-        <div class="search-bar generalflex">
-                <img src="./icon-img-pack/search-normal.svg" alt="">
-                <input type="search" placeholder="Search here" class="song-search">
-        </div>
+        
         <div class="display-bg generalflex">
             <div class="display-bg-text">
                 <p class="soundmack">Soundmack</p>
@@ -241,15 +251,20 @@
                     <img src="./icon-img-pack/pause.svg" alt="">
                     <img src="./icon-img-pack/menu.svg" alt="">
                 </div>
+            </div>
+            <div class="play-board">
+                <div class="player-board generalflex">
+                    <div class="player-board-props">
+                        <img src="./icon-img-pack/close-square.svg" alt="">
+                    </div>
+                </div>   
+                <div class="player-sub-board generalflex">
 
-        </div>
+                </div>   
+            </div>
     </section>
     <section class="right-panel">
-        <div class="log-sign generalflex">
-            <button class="log-in"> Log in</button>
-            <button class="register"> Register</button>
-        </div>
-        <div class="recents generalflex">
+               <div class="recents generalflex">
             <p class="recently-played">Recently Played</p>
             <p class="see-all">See all</p>
         </div>
@@ -291,7 +306,7 @@
             </div>    
         </div>
         <div class="song-display">
-<img src="./art-pack/Fireboy-big.png" alt="">
+            <img src="./art-pack/Fireboy-big.png" alt="">
         </div>
         <div class="song-display-deets generalflex">
             <div class="song-dis">
@@ -301,5 +316,6 @@
             <img src="./icon-img-pack/heart.png" alt="">
         </div>
     </section>
+</div>
 </body>
 </html>
