@@ -1,0 +1,390 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css");
+@import url(//db.onlinewebfonts.com/c/d4427ac94162625b40744124d565291b?family=Xenophone);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --dark: #16121A;
+    --bgdark:#110D14;
+   --grey:#757575;
+   --blue: #00BFFF;
+   --font:#C4C4C4;
+   --card:#252226;
+   --white:#ffffff;
+   --green:#00222E;
+   --radial: radial-gradient(180deg, #00BFFF 0%, #728AE6 100%);
+   --linear: linear-gradient(180deg, #936CC9 0%, #A74AA1 100%);
+}
+
+body{
+width: 100%;
+font-family: 'HK Grotesk', sans-serif;
+font-style: normal;
+background-color:var(--bgdark);
+}
+
+.generalflex{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.navbar{
+width: 100%;
+justify-content: space-around;
+padding: 40px;
+border-bottom: 2px solid var(--grey);    
+}
+
+.logo{
+margin-left: -100px;
+display: flex;
+gap: 10px;
+}
+   
+.logo img{
+width: 48px;
+height: 48px;
+}
+
+.logo p{
+font-weight: 400;
+font-size: 30px;
+color: var(--white);
+}
+
+.log-sign{
+gap: 24px;
+position: relative;
+right: -70px;
+/* margin-bottom: 56px; */
+}
+.search-bar{
+    gap: 20px;
+    padding: 8px 320px 8px 90px;
+    width: 476px;
+    background-color:var(--card);
+    border-radius: 8px;
+    position: relative;
+    left: -90px;
+    
+    /* margin-top: 48px; */
+    
+    }
+    .search-bar img{
+        margin-left: 130px;
+        cursor: pointer;
+    }
+    .song-search{
+        border: none;
+    }
+    input[type=search]{
+        background-color: transparent;
+        padding: 5px 100px 5px 0;
+    }
+    input::placeholder{
+        color: var(--font);
+    
+    }
+.log-in{
+color:var(--blue);
+border: 2px solid;
+width: 102px;
+height: 40px;
+border-radius: 8px;
+background:transparent;
+font-weight: 700;
+font-size: 16px;
+cursor: pointer;
+}
+
+.register{
+width: 102px;
+height: 40px;
+background: linear-gradient(180deg, #00BFFF 0%, #728AE6 100%);
+border-radius: 8px;
+color:var(--white);
+border:none;
+font-weight: 700;
+font-size: 16px;
+cursor: pointer;
+}
+
+
+.coverall{
+    width: 100%;
+}
+/* left-panel styling starts here */
+.left-panel{
+    width: 20%;
+    position: relative;
+    top: -100px;
+ 
+}
+
+.navs{
+gap:20px;
+justify-content: left;
+margin-left: 34px;
+margin-bottom: 40px;
+cursor: pointer;
+}
+
+.navs a{
+text-decoration: none;
+color:var(--grey);
+font-weight: 600;
+font-size: 20px;
+
+}
+
+/* left-panel styling ends here */
+
+
+/* main-panel styling starts here */
+.main-panel{
+    width: 80%;
+    border-left: 2px solid var(--grey);
+    /* padding-left: 30px; */
+    /* padding-right: 10px; */
+}
+
+.tab {
+    margin-top: 32px;
+    overflow: hidden;
+   
+}
+  
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    color: var(--grey);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: .9rem 2.8rem;
+    transition: 0.3s;
+    position: relative;
+    font-size: 17px;
+}
+  
+  /* Change background color of buttons on hover */
+.tab button:hover {
+    color: var(--blue);
+}
+  
+  /* Create an active/current tablink class */
+.tab button::after {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    width: 10%;
+    background-color:var(--blue);
+    padding: .1rem;
+    border-radius: 5rem;
+    transform: scale(0);
+    transition: transform ease-in-out 150ms;
+}
+
+.tab button.active::after{
+    transform: scale(1);
+}
+ 
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    /* padding: 6px 12px; */
+    /* border: 1px solid green; */
+    border-top: none;
+}
+
+/* footer styling begins here */
+
+.footer{
+    display: flex;
+    margin-top: 175px;
+    justify-content: space-around;
+    padding:48px 42px 64px 42px  ;
+    background-color: var(--card);
+}
+.foot-logo{
+    
+}
+
+.logof{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+
+.logof h5{
+    font-weight: 400;
+    font-size: 32px;
+    color: var(--white);
+}
+.foot-logo p{
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--font);
+    margin-bottom: 24px;
+}
+.socials{
+    gap: 24px;
+    display: flex;
+
+}
+.socials img{
+width: 40px;
+height: 40px;
+cursor: pointer;
+}
+
+.useful{
+
+}
+.useful p{
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--font);
+    margin-bottom: 16px;
+}
+.useful ol li{
+list-style: none;
+font-weight: 400;
+font-size: 16px;
+color: var(--font);
+margin-bottom: 16px;
+cursor: pointer;
+}
+
+.useful ol li:hover{
+    text-decoration: underline;
+}
+/* footer styling ends here */
+
+/* main-panel styling ends here */
+
+
+/* Log-in form styling starts here */
+
+.wrapper{
+    width: 452px;
+    height: 664px;
+    background-color: var(--card);
+    margin: 30px auto;
+    padding-top: 20px;
+    padding-bottom: 150px;
+
+}
+.focus{
+    display: flex;
+    gap: 32px;
+    margin: 40px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.focus p{
+    font-size: 24px;
+    color:var(--blue); 
+    font-weight: 600;
+
+}
+.focus h3{
+    font-size: 24px;
+    color:var(--grey); 
+    font-weight: 600;
+}
+.field-terms{
+    display: flex;
+     margin-top: 16px;
+    margin-left: 40px;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--white);
+}
+.field-terms a{
+    text-decoration: none;
+    color: var(--blue);
+}
+input::placeholder{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--grey);
+
+}
+.gender{
+display: flex !important;
+justify-content: space-around;
+color: var(--font);
+}
+.focus-in{
+    width: 372px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 2px solid var(--grey);
+    padding: 25px;
+}
+.verify{
+    width:254px ;
+    margin-right: 8px;
+    
+}
+
+.butty{
+    background-color: transparent;
+    padding: 15px 15px;
+    border-radius: 8px;
+    border: 2px solid var(--blue);
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 16px;
+}
+.field{
+    margin: 20px;
+    justify-content: center;
+    border-radius: 8px;
+}
+.btn-layer{
+color:var(--white) ;  
+border: 12px;
+width: 372px;
+height: 56px;
+margin-left: 20px ;
+border-radius: 8px;
+background: linear-gradient(180deg, #00BFFF 0%, #728AE6 100%);
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+
+}
+.social-text{
+    color: var(--font);
+    font-size: 16px;
+    font-weight: 400px;
+    text-align: center;
+    margin-top: 16px auto;
+}
+.social-icon{
+    height: 46px;
+    width: 46px;
+    margin: 0 0.45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-icon:hover{
+    color: var(--blue);
+}

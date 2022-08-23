@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundMack-Favourites</title>
+    <link href="//db.onlinewebfonts.com/c/d4427ac94162625b40744124d565291b?family=Xenophone" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="favourites.css">
+    <link rel="icon" href="./art-pack/music-icon.png">
+</head>
+<body>
+    <section class="navbar generalflex">
+        <div class="logo">                                     
+            <img src="./art-pack/music-icon.png" alt="">
+            <p>Soundmack</p>
+        </div>
+        <div class="search-bar generalflex">
+            <img src="./icon-img-pack/search-normal.svg" alt="">
+            <input type="search" placeholder="Search here" class="song-search">
+        </div>
+        <div class="log-sign generalflex">
+            <button class="log-in"> Log in</button>
+            <button class="register"> Register</button>
+        </div>
+    </section>
+    <div class="coverall generalflex">
+     <section class="left-panel">
+        <div class="nav">
+            <div class="home generalflex navs">
+                <img src="./icon-img-pack/Vector (2).svg" alt="">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="discover generalflex navs">
+                <img src="./icon-img-pack/Vector.svg" alt="">
+                <a href="discover.html">Discover</a>
+            </div>
+            <div class="downloads generalflex navs">
+                <img src="./icon-img-pack/donwload.png" alt="">
+                <a href="downloads.html">Downloads</a>
+            </div>
+            <div class="fav generalflex navs">
+                <img src="./icon-img-pack/favourite.png" alt="">
+                <a href="favourites.html">Favourites</a>
+            </div>
+            <div class="settings generalflex navs">
+                <img src="./icon-img-pack/setting.png" alt="">
+                <a href="settings.html">Settings</a>
+            </div>
+        </div>
+    </section>
+    <section class="main-panel">
+       
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'London')">Songs</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">Albums</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Playlist</button>
+            <button class="tablinks" onclick="openCity(event, 'Nigeria')">Artists</button>
+          </div>
+      
+
+        <!-- SONGS STARTS HERE -->
+        <div id="London" class="tabcontent">
+            <div class="engaged-tweets" id="borderr" >
+                <div class="engaged-tweet">
+                    </div>
+                </div>
+           </div>
+                     
+
+                
+
+                
+             
+       
+
+          <!-- ALBUMS -->
+          
+          <div id="Paris" class="tabcontent">
+
+                <div class="engaged-tweets" id="borderr">
+                    <div class="engaged-tweet">
+                                            </div>
+                </div>
+            </div>
+          
+
+          <!-- PLAYLISTS-->
+          
+          <div id="Tokyo" class="tabcontent" >
+            <div class="tweets" id="borderr">
+                <div class="tweet-profile-img">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ARTISTS -->
+
+         
+          <div id="Nigeria" class="tabcontent">
+            <div class="engaged-tweets" id="borderr">
+                <div class="engaged-tweet">
+                    
+                </div>
+            </div>
+          </div>
+       
+        
+          <!-- FOOTER -->
+          
+        <div class="footer">
+            <div class="foot-logo">
+                <div class="logof">                                     
+                    <img src="./art-pack/music-icon.png" alt="">
+                    <h5>Soundmack</h5>
+                </div>
+                <p>Follow us</p>
+                <div class="socials">
+                    <img src="./icon-img-pack/logos_facebook.svg" alt="">
+                    <img src="./icon-img-pack/logos_twitter.svg" alt="">
+                    <img src="./icon-img-pack/flat-color-icons_google.svg" alt="">
+                </div>
+            </div>
+            <div class="useful">
+                <p>Useful links</p>
+                <ol>
+                    <li>Help</li>
+                    <li>EULA</li>
+                    <li>Privacy policy</li>
+                    <li>Terms and Conditions</li>
+                    <li>Sitemap</li>
+                </ol>
+            </div>
+            <div class="useful">
+                <p>Company</p>
+                <ol>
+                    <li>About Soundmack Music</li>
+                    <li>Soundmack for Artists</li>
+                    <li>Partners</li>
+                    <li>Advertise for soundmack</li>
+                    <li>Subscribe</li>
+                </ol>
+            </div>
+            <div class="useful">
+                <p>Content Provider</p>
+                <ol>
+                    <li>CMS</li>
+                    <li>Visual Identity Guide</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+</div>
+ <!-- profile tab javascript -->
+
+ <script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+</body>
+</html>
