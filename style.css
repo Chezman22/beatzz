@@ -324,11 +324,14 @@ justify-content: space-around;
     margin-top: 10px;
     margin-bottom: 8px;
 }
-
 .focus p{
     font-size: 24px;
     color:var(--blue); 
     font-weight: 600;
+}
+.focus p:hover{
+    background: linear-gradient(180deg, #00BFFF 0%, #728AE6 100%);
+    border-radius: 8px;
 }
 .pass-link{
     margin: 30px 50px;
@@ -348,7 +351,7 @@ justify-content: space-around;
 }
 .field-terms{
     display: flex;
-     margin-top: 16px;
+    margin-top: 16px;
     margin-left: 40px;
     gap: 10px;
     font-weight: 400;
@@ -366,9 +369,12 @@ input::placeholder{
 
 }
 .gender{
-display: flex !important;
-justify-content: space-around;
-color: var(--font);
+    display: flex;
+    color: var(--font);
+     margin-left: 40px;
+     gap: 20px;
+     
+
 }
 .focus-in{
     width: 372px;
