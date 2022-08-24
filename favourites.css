@@ -85,6 +85,8 @@ right: -70px;
     input[type=search]{
         background-color: transparent;
         padding: 5px 100px 5px 0;
+        outline: none;
+        color: var(--white);
     }
     input::placeholder{
         color: var(--font);
@@ -122,7 +124,7 @@ cursor: pointer;
 .left-panel{
     width: 20%;
     position: relative;
-    top: -100px;
+    top: -500px;
  
 }
 
@@ -203,6 +205,84 @@ font-size: 20px;
     /* padding: 6px 12px; */
     /* border: 1px solid green; */
     border-top: none;
+}
+.songs{
+    /* justify-content: space-between; */
+    color: var(--font);
+    background-color: var(--card);
+    padding: 8px 28px;
+    width: 100%;
+    margin-bottom: 24px;
+}
+.sn{
+    margin-right: 32px;
+    
+}
+.coverimg{
+width: 48px;
+height: 48px;
+/* background: #C4C4C4; */
+border-radius: 8px;
+margin-right: 24px;
+}
+.song-info{
+    color: var(--font);
+    margin-right: 130px;
+    justify-content: left;
+    justify-items: left;
+    cursor: pointer;
+
+
+}
+.sub-info{
+    color: var(--grey);
+gap: 14px;
+align-items: center;
+justify-content: center;
+justify-items: center;
+
+}
+.song-deets{
+    color: var(--font);
+    gap: 80px;
+    cursor: pointer;
+}
+.top-arts, .new-release{
+    gap: 17px;
+    padding: 16px 40px;
+}
+
+.art-circle{
+text-align: center;
+cursor: pointer;
+}
+.art-circle #img{
+    width: 190px;
+    height: 190px;
+}
+
+.art-circle p, .new-rel h5{
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--font);
+}
+.listens{
+gap: 10px;
+}
+.listens p, .new-rel p{
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--grey); 
+}
+.listens p:hover, .new-rel p:hover{
+    text-decoration: underline;
+}
+.new-rel{
+    cursor: pointer;
+}
+
+.new-rel img{
+    width: 190px;
 }
 
 /* footer styling begins here */

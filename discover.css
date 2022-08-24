@@ -85,6 +85,8 @@ right: -70px;
     input[type=search]{
         background-color: transparent;
         padding: 5px 100px 5px 0;
+        outline: none;
+        color: var(--white);
     }
     input::placeholder{
         color: var(--font);
