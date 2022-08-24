@@ -46,6 +46,7 @@ body{
     gap: 10px;
     position: relative;
     left:-30px;
+    cursor: pointer;
     }
        
     .logo img{
@@ -53,9 +54,9 @@ body{
     height: 40px;
     }
     
-    .logo p{
-    font-weight: 400;
-    font-size: 28px;
+    .subtext{
+    font-weight: 600;
+    font-size: 32px;
     color: var(--white);
     }
     .search-bar{
@@ -166,7 +167,6 @@ cursor: pointer;
 .soundmack{
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
     margin-bottom: 24px;
 }
 .listen{
