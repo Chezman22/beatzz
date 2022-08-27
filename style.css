@@ -371,11 +371,11 @@ justify-content: space-around;
 
 .wrappers{
     width: 452px;
-    height: 664px;
+    /* height: 664px; */
     background-color: var(--card);
     margin: 30px auto;
     padding-top: 20px;
-    padding-bottom: 150px;
+    /* padding-bottom: 150px; */
     display: none;
 
 }

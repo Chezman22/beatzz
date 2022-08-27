@@ -22,6 +22,8 @@
 
 body{
 width: 100%;
+overflow: hidden;
+height: 100vh;
 font-family: 'HK Grotesk', sans-serif;
 font-style: normal;
 background-color:var(--bgdark);
@@ -31,13 +33,15 @@ background-color:var(--bgdark);
 display: flex;
 justify-content: center;
 align-items: center;
+height: 100%;
 }
 
 .navbar{
 width: 100%;
 justify-content: space-around;
 padding: 40px;
-border-bottom: 2px solid var(--grey);    
+border-bottom: 2px solid var(--grey);
+height: auto;    
 }
 
 .logo{
@@ -118,13 +122,17 @@ cursor: pointer;
 
 
 .coverall{
-    width: 100%;
+    /* width: 100%; */
+    height: 100%;
+    display: flex;
 }
 /* left-panel styling starts here */
 .left-panel{
     width: 20%;
-    position: relative;
-    top: -500px;
+    /* position: relative; */
+    /* top: -500px; */
+    flex: 1 0 10%;
+    margin-top: 40px;
  
 }
 
@@ -153,6 +161,7 @@ font-size: 20px;
     border-left: 2px solid var(--grey);
     /* padding-left: 30px; */
     /* padding-right: 10px; */
+    overflow-y: auto;
 }
 
 .tab {
