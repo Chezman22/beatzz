@@ -19,141 +19,150 @@
    --radial: radial-gradient(180deg, #00BFFF 0%, #728AE6 100%);
    --linear: linear-gradient(180deg, #936CC9 0%, #A74AA1 100%);
 }
-
 body{
-width: 100%;
-font-family: 'HK Grotesk', sans-serif;
-font-style: normal;
-background-color:var(--bgdark);
-}
-
-.generalflex{
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-.navbar{
-width: 100%;
-justify-content: space-around;
-padding: 40px;
-border-bottom: 2px solid var(--grey);    
-}
-
-.logo{
-margin-left: -100px;
-display: flex;
-gap: 10px;
-}
-   
-.logo img{
-width: 48px;
-height: 48px;
-}
-
-.logo p{
-font-weight: 400;
-font-size: 30px;
-color: var(--white);
-}
-
-.log-sign{
-gap: 24px;
-position: relative;
-right: -70px;
-/* margin-bottom: 56px; */
-}
-.search-bar{
-    gap: 20px;
-    padding: 8px 320px 8px 90px;
-    width: 476px;
-    background-color:var(--card);
-    border-radius: 8px;
-    position: relative;
-    left: -90px;
-    
-    /* margin-top: 48px; */
-    
-    }
-    .search-bar img{
-        margin-left: 130px;
-        cursor: pointer;
-    }
-    .song-search{
-        border: none;
-    }
-    input[type=search]{
-        background-color: transparent;
-        padding: 5px 100px 5px 0;
-        outline: none;
-        color: var(--white);
-    }
-    input::placeholder{
-        color: var(--font);
-    
-    }
-.log-in{
-color:var(--blue);
-border: 2px solid;
-width: 102px;
-height: 40px;
-border-radius: 8px;
-background:transparent;
-font-weight: 700;
-font-size: 16px;
-cursor: pointer;
-}
-
-.register{
-width: 102px;
-height: 40px;
-background: linear-gradient(180deg, #00BFFF 0%, #728AE6 100%);
-border-radius: 8px;
-color:var(--white);
-border:none;
-font-weight: 700;
-font-size: 16px;
-cursor: pointer;
-}
-
-
-.coverall{
     width: 100%;
-}
-/* left-panel styling starts here */
-.left-panel{
-    width: 20%;
+    overflow: hidden;
+    height: 100vh;
+    font-family: 'HK Grotesk', sans-serif;
+    font-style: normal;
+    background-color:var(--bgdark);
+    }
+    
+    .generalflex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    }
+    
+    .navbar{
+    width: 100%;
+    justify-content: space-around;
+    padding: 40px;
+    border-bottom: 2px solid var(--grey);
+    height: auto;    
+    }
+    
+    .logo{
+    margin-left: -100px;
+    display: flex;
+    gap: 10px;
+    }
+       
+    .logo img{
+    width: 48px;
+    height: 48px;
+    }
+    
+    .logo p{
+    font-weight: 400;
+    font-size: 30px;
+    color: var(--white);
+    }
+    
+    .log-sign{
+    gap: 24px;
     position: relative;
-    top: -100px;
- 
-}
-
-.navs{
-gap:20px;
-justify-content: left;
-margin-left: 34px;
-margin-bottom: 40px;
-cursor: pointer;
-}
-
-.navs a{
-text-decoration: none;
-color:var(--grey);
-font-weight: 600;
-font-size: 20px;
-
-}
-
-/* left-panel styling ends here */
-
-
-/* main-panel styling starts here */
-.main-panel{
-    width: 80%;
-    border-left: 2px solid var(--grey);
-    /* padding-left: 30px; */
-    /* padding-right: 10px; */
-}
+    right: -70px;
+    /* margin-bottom: 56px; */
+    }
+    .search-bar{
+        gap: 20px;
+        padding: 8px 320px 8px 90px;
+        width: 476px;
+        background-color:var(--card);
+        border-radius: 8px;
+        position: relative;
+        left: -90px;
+        
+        /* margin-top: 48px; */
+        
+        }
+        .search-bar img{
+            margin-left: 130px;
+            cursor: pointer;
+        }
+        .song-search{
+            border: none;
+        }
+        input[type=search]{
+            background-color: transparent;
+            padding: 5px 100px 5px 0;
+            outline: none;
+            color: var(--white);
+        }
+        input::placeholder{
+            color: var(--font);
+        
+        }
+    .log-in{
+    color:var(--blue);
+    border: 2px solid;
+    width: 102px;
+    height: 40px;
+    border-radius: 8px;
+    background:transparent;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    }
+    
+    .register{
+    width: 102px;
+    height: 40px;
+    background: linear-gradient(180deg, #00BFFF 0%, #728AE6 100%);
+    border-radius: 8px;
+    color:var(--white);
+    border:none;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    }
+    
+    
+    .coverall{
+        /* width: 100%; */
+        height: 100%;
+        display: flex;
+    }
+    /* left-panel styling starts here */
+    .left-panel{
+        width: 20%;
+        /* position: relative; */
+        /* top: -500px; */
+        flex: 1 0 10%;
+        margin-top: -200px;
+     
+    }
+    
+    .navs{
+    gap:20px;
+    justify-content: left;
+    margin-left: 34px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    }
+    
+    .navs a{
+    text-decoration: none;
+    color:var(--grey);
+    font-weight: 600;
+    font-size: 20px;
+    
+    }
+    
+    /* left-panel styling ends here */
+    
+    
+    /* main-panel styling starts here */
+    .main-panel{
+        width: 80%;
+        border-left: 2px solid var(--grey);
+        /* padding-left: 30px; */
+        /* padding-right: 10px; */
+        overflow-y: auto;
+        
+    }
 
 .tab {
     margin-top: 32px;
