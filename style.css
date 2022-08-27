@@ -365,6 +365,18 @@ justify-content: space-around;
     margin: 30px auto;
     padding-top: 20px;
     padding-bottom: 150px;
+    display: none;
+
+}
+
+.wrappers{
+    width: 452px;
+    height: 664px;
+    background-color: var(--card);
+    margin: 30px auto;
+    padding-top: 20px;
+    padding-bottom: 150px;
+    display: none;
 
 }
 .focus{
@@ -374,14 +386,28 @@ justify-content: space-around;
     margin-top: 10px;
     margin-bottom: 8px;
 }
-.focus p{
+.focus .fail{
     font-size: 24px;
     color:var(--blue); 
     font-weight: 600;
 }
-.focus p:hover{
-    background: linear-gradient(180deg, #00BFFF 0%, #728AE6 100%);
-    border-radius: 8px;
+.focus .fail:hover{
+    /* background: linear-gradient(180deg, #00BFFF 0%, #728AE6 100%); */
+    /* border-radius: 8px; */
+    text-decoration: underline;
+}
+
+.focus .tail{
+    font-size: 24px;
+    /* color:var(--blue);  */
+    font-weight: 600;
+}    
+
+
+.focus .tail:hover{
+    /* background: linear-gradient(180deg, #00BFFF 0%, #728AE6 100%); */
+    /* border-radius: 8px; */
+    text-decoration: underline;
 }
 .pass-link{
     margin: 30px 50px;
@@ -394,10 +420,18 @@ justify-content: space-around;
     color: var(--blue);
 }
 
-.focus h3{
+.fail{
     font-size: 24px;
     color:var(--grey); 
     font-weight: 600;
+    text-decoration: none;
+}
+
+.tail{
+    font-size: 24px;
+    color:var(--grey); 
+    font-weight: 600;
+    text-decoration: none;
 }
 .field-terms{
     display: flex;
