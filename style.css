@@ -367,6 +367,17 @@ justify-content: space-around;
     display: none;
 
 }
+
+.wrappers{
+    width: 452px;
+    height: 664px;
+    background-color: var(--card);
+    margin: 30px auto;
+    padding-top: 20px;
+    padding-bottom: 150px;
+    display: none;
+
+}
 .focus{
     display: flex;
     gap: 32px;

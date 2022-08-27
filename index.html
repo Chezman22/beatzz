@@ -20,19 +20,17 @@
             <input type="search" placeholder="Search here" class="song-search">
         </div>
         <div class="log-sign generalflex">
-            <button class="log-in"> Log in</button>
-            <button class="register"  onclick="openForm()"> Register</button>
+            <button class="log-in" onclick="openForm()"> Log in</button>
+            <button class="register" onclick="openForm()"> Register</button>
         </div>
     </section>
     <div class="wrapper" id="skirt">
         <div class="focus">
             <a class="tail" style="color:#00BFFF" href="login.html">Log in</a> 
-            <a class="fail" style="color:#757575" href="register.html">Register</a>
-            
+            <a class="fail" style="color:#757575" href="register.html">Register</a>  
         </div>
                           
            <div class="form-inner">
-
              <form action="#" class="login">
                <div class="field">
                   <input class="focus-in" type="numerics" placeholder="NG +234 |Phone Number" required>
@@ -86,6 +84,45 @@
             </div>
        </div>
    </div>
+
+   <div class="wrappers" id="shirt">
+    <div class="focus">
+       <a class="tail" href="login.html">Log in</a> 
+       <a class="fail" href="register.html">Register</a>
+    </div>
+    
+    
+    <div class="form-inner">
+
+  <form action="#" class="login">
+        <div class="field">
+           <input class="focus-in" type="number" placeholder="NG +234 |Phone Number" required>
+        </div>
+        <div class="field">
+          <input class="focus-in"  type="password" placeholder="Password(6-16 characters)" required>
+    </div>
+    <div class="pass-link">
+       <a href="#">Forgot password?</a>
+    </div>  
+    <button class="btn-layer">Log in</button>
+
+    <p class="social-textin">- Or -</p>
+                               
+    <div class="social-media">
+          <a href="#" class="social-icon-down">
+             <img src="./icon-img-pack/logos_facebook.svg">
+          </a>
+          <a href="#" class="social-icon-down">
+             <img src="./icon-img-pack/logos_twitter.svg">
+          </a>
+          <a href="#" class="social-icon-down">
+             <img src="./icon-img-pack/flat-color-icons_google.svg">
+          </a>
+     </div>
+   </form>
+   </div>
+  </div>
+  
 <div class="coverall generalflex" >
     <section class="left-panel">
         
@@ -384,8 +421,10 @@
     function openForm() {
       document.getElementById("skirt").style.display = "block";
     }
-    
-    
-    </script>
+    function openForm() {
+      document.getElementById("shirt").style.display = "block";
+    }
+
+</script>
 </body>
 </html>
