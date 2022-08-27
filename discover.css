@@ -52,12 +52,15 @@ gap: 10px;
 .logo img{
 width: 48px;
 height: 48px;
+cursor: pointer;
 }
 
 .logo p{
-font-weight: 400;
-font-size: 30px;
-color: var(--white);
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--white);
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .log-sign{
@@ -73,7 +76,7 @@ right: -70px;
     background-color:var(--card);
     border-radius: 8px;
     position: relative;
-    left: -90px;
+    left: -70px;
     
     /* margin-top: 48px; */
     
@@ -302,10 +305,11 @@ gap: 10px;
     cursor: pointer;
 }
 
-.logof h5{
+.logof a{
     font-weight: 400;
     font-size: 32px;
     color: var(--white);
+    text-decoration: none;
 }
 .foot-logo p{
     font-weight: 600;

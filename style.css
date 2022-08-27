@@ -58,6 +58,8 @@ body{
     font-weight: 600;
     font-size: 32px;
     color: var(--white);
+    text-decoration: none;
+    cursor: pointer;
     }
     .search-bar{
         gap: 20px;
