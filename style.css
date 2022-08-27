@@ -160,6 +160,7 @@ cursor: pointer;
 .display-bg{
     background: linear-gradient(180deg, #00BFFF 0%, #728AE6 100%);
     margin: 24px 15px 40px 32px ;
+    justify-content: space-between;
     padding-left: 40px;
     border-radius: 8px;
 }
@@ -186,14 +187,14 @@ cursor: pointer;
 .explore{
     justify-content: center;
     align-items: center;
-    padding: 8px 24px;
-    width: 158px;
+    padding: 8px 16px;
+    width: 150px;
     height: 40px;
     background-color: var(--white);
     border-radius: 8px;
     border: none;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 16px;
     color: var(--blue);
     cursor: pointer;
 }
