@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="discover.css">
     <link rel="icon" href="./icon-img-pack/latest-logo.png">
 </head>
+
 <body>
     <section class="navbar generalflex">
         <div class="logo">                                     
@@ -19,6 +20,7 @@
             <img src="./icon-img-pack/search-normal.svg" alt="">
             <input type="search" placeholder="Search here" class="song-search">
         </div>
+
         <div class="log-sign generalflex">
             <button class="log-in"> Log in</button>
             <button class="register"> Register</button>
@@ -218,8 +220,50 @@
                     <li>Visual Identity Guide</li>
                 </ol>
             </div>
-        </div>
+        </div>    
     </section>
 </div>
+
+            <!--The play/pause panel is here  -->
+            <div class="play-board">
+                <div class="player-board">
+                    <div class="player-board-props">
+                        <div class="currentmusic-dp">
+                               <img src="./art-pack/fireboy-square.png" alt=""> 
+                               <div class="currentmusic-details">
+                                   <p class="currentmusic-title">Compromise</p>
+                                   <p class="currentmusic-artist">Fireboy DML & REMA </p>
+                               </div>
+                        </div>
+    
+                        <div class="add-download">
+                            <img src="./icon-img-pack/add.svg" alt="">
+                            <img src="./icon-img-pack/download2.svg" alt="">
+                            <img src="./icon-img-pack/heart.png" alt="">
+                        </div>
+                        <div class="play-pause generalflex">                        
+                            <img src="./icon-img-pack/shuffle.svg" alt="">
+                            <img src="./icon-img-pack/previous.svg" alt="">
+                            <img src="./icon-img-pack/pause2.svg" alt="">
+                            <img src="./icon-img-pack/previous.svg" alt="">
+                            <img src="./icon-img-pack/shuffle.svg" alt="">
+                            
+                        </div>
+                        <div class="play-volume">
+                            <img src="./icon-img-pack/Vector2.png" alt="">
+                            <img src="./icon-img-pack/Frame 44.png" alt="">
+                        </div>
+                        
+                    </div>
+                </div>   
+                <div class="player-sub-board generalflex">
+                    
+                    <div class="musicplay-range generalflex">
+                        <p class="player-board-time" >1:30</p>
+                        <input type="range" id="vol" name="vol" min="0" max="50" class="music-range">
+                        <p class="player-board-time" >2:58</p>                        
+                    </div>
+                </div>   
+            </div>
 </body>
 </html>
