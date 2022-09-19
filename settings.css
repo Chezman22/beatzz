@@ -406,3 +406,137 @@ input::placeholder {
 .social-icon:hover {
   color: var(--blue);
 }
+/* Styling the playerboard starts here */
+.play-board {
+  width: 100%;
+  height: 120px;
+  background: var(--bgdark);
+  position: fixed;
+  bottom: 0;
+}
+
+.player-board-props {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+
+.currentmusic-dp {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  top: 5px;
+}
+.currentmusic-dp img {
+  width: 65px;
+}
+.currentmusic-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #c4c4c4;
+  line-height: 24px;
+  gap: 5px;
+}
+.currentmusic-title {
+  font-family: "HK Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.currentmusic-artist {
+  font-family: "HK Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.player-board-props img {
+  cursor: pointer;
+}
+
+.add-download {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.play-pause {
+  gap: 30px;
+}
+
+.play-volume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.musicplay-range {
+  position: relative;
+  left: 200px;
+  gap: 20px;
+}
+
+.music-range {
+  width: 450px;
+  position: relative;
+}
+
+.player-board-time {
+  width: 32px;
+  height: 24px;
+  font-family: "HK Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  color: #ffffff;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 300px;
+  height: 5px;
+  background: ;
+  border: none;
+  border-radius: 8px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: var(--white);
+  margin-top: -4px;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: var(--blue);
+}
+
+input[type="range"]::-ms-fill-lower {
+  background: #777;
+  border-radius: 10px;
+}
+input[type="range"]::-ms-fill-upper {
+  background: #ddd;
+  border-radius: 10px;
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: #888;
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: #ccc;
+}
