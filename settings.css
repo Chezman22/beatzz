@@ -19,6 +19,26 @@
   --radial: radial-gradient(180deg, #00bfff 0%, #728ae6 100%);
   --linear: linear-gradient(180deg, #936cc9 0%, #a74aa1 100%);
 }
+/* SCROLL BAR STYLING */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--grey);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--font);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--blue);
+}
 body {
   width: 100%;
   overflow: hidden;
